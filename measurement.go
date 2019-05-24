@@ -20,19 +20,19 @@ type Measurement struct {
 	Timestamp *UnixTime `json:"timestamp,omitempty"`
 
 	// Temperature (in Celisius degrees).
-	Temperature *float64 `json:"temperature,omitempty"`
+	Temperature *float32 `json:"temperature,omitempty"`
 
 	// Relative humidity.
-	Humidity *float64 `json:"humidity,omitempty"`
+	Humidity *float32 `json:"humidity,omitempty"`
 
 	// Atmospheric pressure (in hPa).
-	Pressure *float64 `json:"pressure,omitempty"`
+	Pressure *float32 `json:"pressure,omitempty"`
 
 	// PM2.5 particulate matter concentration (in µg/m3).
-	Pm25 *float64 `json:"pm25,omitempty"`
+	Pm25 *float32 `json:"pm25,omitempty"`
 
 	// PM10 particulate matter concentration (in µg/m3).
-	Pm10 *float64 `json:"pm10,omitempty"`
+	Pm10 *float32 `json:"pm10,omitempty"`
 
 	// AQI air quality index value.
 	Aqi *int `json:"aqi,omitempty"`
