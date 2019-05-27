@@ -23,9 +23,11 @@ import (
 type StatusCode int
 
 const (
-	StatusOk          StatusCode = 200
-	StatusBadRequest  StatusCode = 400
-	StatusServerError StatusCode = 500
+	StatusOk               StatusCode = 200
+	StatusBadRequest       StatusCode = 400
+	StatusNotFound         StatusCode = 404
+	StatusMethodNotAllowed StatusCode = 405
+	StatusServerError      StatusCode = 500
 )
 
 func (sc *StatusCode) UnmarshalJSON(s []byte) error {

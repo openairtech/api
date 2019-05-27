@@ -16,6 +16,24 @@ package api
 
 // Station type contains station-related data.
 type Station struct {
+	// Id is unique public station identifier.
+	Id *int `json:"id,omitempty"`
+
 	// TokenId is unique private station identifier.
-	TokenId string `json:"token"`
+	TokenId string `json:"token,omitempty"`
+
+	// Description for this station.
+	Description string `json:"desc,omitempty"`
+
+	// Created timestamp.
+	Created UnixTime `json:"created"`
+
+	// Longitude of the station location.
+	Longitude float64 `json:"long"`
+
+	// Latitude of the station location.
+	Latitude float64 `json:"lat"`
+
+	// LastMeasurement contains last environment data measured by the station.
+	LastMeasurement *Measurement `json:"last_measurement,omitempty"`
 }

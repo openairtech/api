@@ -22,3 +22,10 @@ type Result struct {
 	// Message for given status (optional).
 	Message string `json:"message,omitempty"`
 }
+
+// StationsResult type contains result for API stations request.
+type StationsResult struct {
+	Result
+
+	Stations []Station `json:"stations,omitempty"`
+}
