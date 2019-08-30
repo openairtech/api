@@ -19,6 +19,9 @@ type FeederData struct {
 	// TokenId is unique private station identifier.
 	TokenId string `json:"token"`
 
+	// Station software version string.
+	Version string `json:"version,omitempty"`
+
 	// Measurements contains array of data measured by the station.
 	Measurements []Measurement `json:"measurements,omitempty"`
 }

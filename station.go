@@ -25,8 +25,14 @@ type Station struct {
 	// Description for this station.
 	Description string `json:"desc,omitempty"`
 
+	// Station current software version.
+	Version string `json:"version,omitempty"`
+
 	// Created timestamp.
 	Created UnixTime `json:"created"`
+
+	// Last seen timestamp (never if empty).
+	Seen UnixTime `json:"seen,omitempty"`
 
 	// Longitude of the station location.
 	Longitude float64 `json:"long"`
