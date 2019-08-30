@@ -29,3 +29,10 @@ type StationsResult struct {
 
 	Stations []Station `json:"stations,omitempty"`
 }
+
+// MeasurementsResult type contains result for API measurements request.
+type MeasurementsResult struct {
+	Result
+
+	Measurements []Measurement `json:"measurements,omitempty"`
+}
