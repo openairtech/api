@@ -36,3 +36,11 @@ type MeasurementsResult struct {
 
 	Measurements []Measurement `json:"measurements,omitempty"`
 }
+
+// InfoResult type contains result for API server info request.
+type InfoResult struct {
+	Result
+
+	BuildVersion string `json:"version,omitempty"`
+	BuildDate    string `json:"built,omitempty"`
+}
