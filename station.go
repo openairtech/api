@@ -32,7 +32,7 @@ type Station struct {
 	Created UnixTime `json:"created"`
 
 	// Last seen timestamp (never if empty).
-	Seen UnixTime `json:"seen,omitempty"`
+	Seen *UnixTime `json:"seen,omitempty"`
 
 	// Longitude of the station location.
 	Longitude float64 `json:"long"`
