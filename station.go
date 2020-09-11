@@ -34,6 +34,9 @@ type Station struct {
 	// Last seen timestamp (never if empty).
 	Seen *UnixTime `json:"seen,omitempty"`
 
+	// Station is public (true or omitted) or private (false).
+	IsPublic *bool `json:"is_public,omitempty"`
+
 	// Longitude of the station location.
 	Longitude float64 `json:"long"`
 
